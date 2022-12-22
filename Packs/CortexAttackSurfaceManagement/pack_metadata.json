@@ -2,7 +2,7 @@
     "name": "Cortex Attack Surface Management",
     "description": "Content for working with Attack Surface Management (ASM).",
     "support": "xsoar",
-    "currentVersion": "1.3.0",
+    "currentVersion": "1.4.0",
     "author": "Cortex XSOAR",
     "url": "https://www.paloaltonetworks.com/cortex",
     "email": "",
@@ -19,25 +19,29 @@
         "Palo Alto Networks"
     ],
     "dependencies": {
-        "ServiceNow": {
+        "CommonScripts": {
             "mandatory": false,
-            "display_name": "ServiceNow"
+            "display_name": "Common Scripts"
         },
         "Nmap": {
             "mandatory": false,
             "display_name": "Nmap"
         },
-        "Tenable_io": {
-            "mandatory": false,
-            "display_name": "Tenable.io"
+        "ServiceNow": {
+            "mandatory": true,
+            "display_name": "ServiceNow"
         },
         "AWS-Enrichment-Remediation": {
             "mandatory": false,
             "display_name": "AWS Enrichment and Remediation"
         },
-        "CommonScripts": {
+        "Rapid7_Nexpose": {
+            "mandatory": false,
+            "display_name": "Rapid7 InsightVM"
+        },
+        "Tenable_io": {
             "mandatory": true,
-            "display_name": "Common Scripts"
+            "display_name": "Tenable.io"
         }
     },
     "marketplaces": [
@@ -48,10 +52,11 @@
         "ASM"
     ],
     "displayedImages": [
-        "ServiceNow",
+        "CommonScripts",
         "Nmap",
-        "Tenable_io",
+        "ServiceNow",
         "AWS-Enrichment-Remediation",
-        "CommonScripts"
+        "Rapid7_Nexpose",
+        "Tenable_io"
     ]
 }

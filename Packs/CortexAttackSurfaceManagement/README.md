@@ -35,6 +35,7 @@ Automated remediation is only possible when the right conditions are met.  These
 
 ### Playbooks
 - [What does this pack do?](#what-does-this-pack-do)
+  - [Automated Remediation requirements](#automated-remediation-requirements)
   - [Playbooks](#playbooks)
   - [Cortex ASM - ASM Alert](#cortex-asm---asm-alert)
     - [Cortex ASM - Detect Service](#cortex-asm---detect-service)
@@ -79,11 +80,11 @@ Playbook that pulls remediation guidance off of a list based on ASM RuleID to be
 
 #### Cortex ASM - Remediation
 Playbook that is used as a container folder for all remediation of ASM alerts.
-![Cortex ASM - Remediation](../doc_files/Cortex_ASM_-_Remediation.png)
+![Cortex ASM - Remediation]()
 
 #### Cortex ASM - GCP Enrichment
 Playbook that given the IP address enriches GCP information relevant to ASM alerts.
-![Cortex ASM - GCP Enrichment](../doc_files/Cortex_ASM_-_GCP_Enrichment.png)
+![Cortex ASM - GCP Enrichment]()
 
 ### Automation Scripts
 This content pack includes the [generateASMReport](#generateasmreport) script: 

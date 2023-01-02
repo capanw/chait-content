@@ -20,7 +20,7 @@
     ],
     "dependencies": {
         "CommonScripts": {
-            "mandatory": false,
+            "mandatory": true,
             "display_name": "Common Scripts"
         },
         "Nmap": {
@@ -28,7 +28,7 @@
             "display_name": "Nmap"
         },
         "ServiceNow": {
-            "mandatory": true,
+            "mandatory": false,
             "display_name": "ServiceNow"
         },
         "AWS-Enrichment-Remediation": {
@@ -40,9 +40,13 @@
             "display_name": "Rapid7 InsightVM"
         },
         "Tenable_io": {
-            "mandatory": true,
+            "mandatory": false,
             "display_name": "Tenable.io"
-        }
+        },
+        "GCP-Enrichment-Remediation": {
+            "mandatory": false,
+            "display_name": "GCP Enrichment and Remediation"
+            }
     },
     "marketplaces": [
         "marketplacev2",

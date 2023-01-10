@@ -107,7 +107,7 @@ tasks:
       description: ''
     nexttasks:
       '#none#':
-      - "97"
+      - "99"
     separatecontext: false
     continueonerrortype: ""
     view: |-
@@ -231,7 +231,7 @@ tasks:
       description: ''
     nexttasks:
       '#none#':
-      - "98"
+      - "100"
     separatecontext: false
     continueonerrortype: ""
     view: |-
@@ -615,7 +615,7 @@ tasks:
       {
         "position": {
           "x": 50,
-          "y": 1270
+          "y": 1265
         }
       }
     note: false
@@ -2869,12 +2869,12 @@ tasks:
     quietmode: 0
     isoversize: false
     isautoswitchedtoquietmode: false
-  "97":
-    id: "97"
-    taskid: 0348d8b7-2264-4b40-8693-3147326ae8d7
+  "99":
+    id: "99"
+    taskid: 14671db5-49ef-4eb7-8288-72e3743db631
     type: playbook
     task:
-      id: 0348d8b7-2264-4b40-8693-3147326ae8d7
+      id: 14671db5-49ef-4eb7-8288-72e3743db631
       version: -1
       name: Cortex ASM - Enrichment
       description: Used as a container folder for all enrichments of ASM alerts.
@@ -2901,19 +2901,19 @@ tasks:
     quietmode: 0
     isoversize: false
     isautoswitchedtoquietmode: false
-  "98":
-    id: "98"
-    taskid: dc095dbc-eac6-4f96-8c5e-78c5402506af
+  "100":
+    id: "100"
+    taskid: 10612687-a428-4821-8368-969bc07e4165
     type: playbook
     task:
-      id: dc095dbc-eac6-4f96-8c5e-78c5402506af
+      id: 10612687-a428-4821-8368-969bc07e4165
       version: -1
       name: Cortex ASM - Remediation
-      description: This playbook contains all the cloud provider sub playbooks for remediation
       playbookName: Cortex ASM - Remediation
       type: playbook
       iscommand: false
       brand: ""
+      description: ''
     nexttasks:
       '#none#':
       - "64"
@@ -2925,39 +2925,9 @@ tasks:
     continueonerrortype: ""
     loop:
       iscommand: false
-      scriptArguments:
-        NicID:
-          complex:
-            root: alert.asmsystemids
-            filters:
-            - - operator: isEqualString
-                left:
-                  value:
-                    simple: alert.asmsystemids.Type
-                  iscontext: true
-                right:
-                  value:
-                    simple: AWS-NIC
-            accessor: ID
-        RemediationRule:
-          complex:
-            root: inputs.RemediationRule
-        VpcID:
-          complex:
-            root: alert.asmsystemids
-            filters:
-            - - operator: isEqualString
-                left:
-                  value:
-                    simple: alert.asmsystemids.Type
-                  iscontext: true
-                right:
-                  value:
-                    simple: AWS-VPC
-            accessor: ID
       exitCondition: ""
       wait: 1
-      max: 100
+      max: 0
     view: |-
       {
         "position": {
